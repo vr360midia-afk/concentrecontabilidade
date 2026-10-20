@@ -2164,8 +2164,8 @@ p.footer-contact-item a:hover {
 /* Métricas de Autoridade */
 .stats-banner {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
   padding: 36px 40px;
   background: var(--color-graphite);
   border-radius: var(--radius-lg);
@@ -2350,11 +2350,9 @@ p.footer-contact-item a:hover {
     grid-template-columns: repeat(2, 1fr);
   }
   .stats-banner {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-  }
-  .stat-item:nth-child(2) {
-    border-right: none;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px 24px;
   }
 }
 

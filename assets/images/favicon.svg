@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="favOrangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFA81A"/>
+      <stop offset="100%" stop-color="#FF9900"/>
+    </linearGradient>
+  </defs>
+  <!-- Fundo sutil arredondado -->
+  <rect width="64" height="64" rx="16" fill="#FFFFFF"/>
+  <!-- Símbolo Concentre: Arcos concêntricos convergentes -->
+  <g transform="translate(5, 5)">
+    <circle cx="27" cy="27" r="23" fill="none" stroke="#323230" stroke-width="4.5" stroke-dasharray="115 40" stroke-linecap="round"/>
+    <circle cx="27" cy="27" r="15" fill="none" stroke="url(#favOrangeGrad)" stroke-width="4.5" stroke-dasharray="75 30" stroke-linecap="round" transform="rotate(65 27 27)"/>
+    <circle cx="27" cy="27" r="5.5" fill="#FF9900"/>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+# OS / System
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs & Cache
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Node / Dependencies (if added in the future)
+node_modules/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDEs
+.vscode/
+.idea/

@@ -28,6 +28,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+  <!-- Google Fonts Assíncronas (Sem Bloqueio de Renderização) -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
+  </noscript>
+
   <link rel="stylesheet" href="../css/style.css">
   <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
 
@@ -302,7 +309,10 @@
 
         <div class="hero-visual">
           <div class="hero-image-card">
-            <img src="../assets/images/bpo-financeiro.jpg" alt="Terceirização de rotinas de BPO financeiro na Concentre em Maceió" width="600" height="440" loading="eager">
+            <picture>
+              <source srcset="../assets/images/bpo-financeiro.webp" type="image/webp">
+              <img src="../assets/images/bpo-financeiro.jpg" alt="Terceirização de rotinas de BPO financeiro na Concentre em Maceió" width="600" height="440" loading="eager" decoding="async">
+            </picture>
             <div class="hero-floating-badge">
               <div class="badge-title">BPO Especializado</div>
               <div class="badge-desc">Rotina financeira padronizada com segurança, controle e relatórios semanais.</div>
@@ -997,6 +1007,6 @@
     </div>
   </div>
 
-  <script src="../js/main.js"></script>
+  <script src="../js/main.js" defer></script>
 </body>
 </html>

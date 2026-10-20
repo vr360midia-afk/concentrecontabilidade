@@ -28,6 +28,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+  <!-- Google Fonts Assíncronas (Sem Bloqueio de Renderização) -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
+  </noscript>
+
   <link rel="stylesheet" href="../css/style.css">
   <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
 
@@ -276,7 +283,10 @@
 
         <div class="hero-media-col">
           <div class="hero-image-card">
-            <img src="../assets/images/equipe-concentre.jpg" alt="Contabilidade para hotelaria e turismo na Pajuçara Maceió" width="600" height="420" loading="eager">
+            <picture>
+              <source srcset="../assets/images/equipe-concentre.webp" type="image/webp">
+              <img src="../assets/images/equipe-concentre.jpg" alt="Contabilidade para hotelaria e turismo na Pajuçara Maceió" width="600" height="420" loading="eager" decoding="async">
+            </picture>
             <div class="hero-floating-badge">
               <div class="badge-title">Polo Turístico &amp; Beira-Mar</div>
               <div class="badge-desc">Conciliação de OTAs, redução de tributos federais e suporte contábil presencial em Maceió.</div>

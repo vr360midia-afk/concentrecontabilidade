@@ -28,6 +28,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+  <!-- Google Fonts Assíncronas (Sem Bloqueio de Renderização) -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
+  </noscript>
+
+  <!-- Preload da Imagem Principal (LCP - Largest Contentful Paint) -->
+  <link rel="preload" as="image" href="assets/images/office-maceio.webp" type="image/webp" fetchpriority="high">
+
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 
@@ -322,7 +332,10 @@
 
         <div class="hero-visual">
           <div class="hero-image-card">
-            <img src="assets/images/office-maceio.jpg" alt="Sede executiva da Concentre Contabilidade no Farol em Maceió" width="600" height="440" loading="eager">
+            <picture>
+              <source srcset="assets/images/office-maceio.webp" type="image/webp">
+              <img src="assets/images/office-maceio.jpg" alt="Sede executiva da Concentre Contabilidade no Farol em Maceió" width="600" height="440" fetchpriority="high" decoding="async">
+            </picture>
             <div class="hero-floating-badge">
               <div class="badge-title">Concentre Contabilidade &amp; Consultoria</div>
               <div class="badge-desc">Parceria executiva para negócios que buscam segurança, redução fiscal e previsibilidade de caixa.</div>
@@ -372,7 +385,10 @@
 
         <div>
           <div class="hero-image-card" style="box-shadow:var(--shadow-lg);">
-            <img src="assets/images/equipe-concentre.jpg" alt="Corpo técnico e consultivo da Concentre Contabilidade em Maceió" width="600" height="420" loading="lazy">
+            <picture>
+              <source srcset="assets/images/equipe-concentre.webp" type="image/webp">
+              <img src="assets/images/equipe-concentre.jpg" alt="Corpo técnico e consultivo da Concentre Contabilidade em Maceió" width="600" height="420" loading="lazy" decoding="async">
+            </picture>
             <div class="hero-floating-badge" style="max-width:320px;">
               <div class="badge-title">Atendimento Humano &amp; Especializado</div>
               <div class="badge-desc">Profissionais habilitados perante o CRC-AL com profunda vivência nas normas fiscais de Alagoas.</div>
@@ -1008,7 +1024,10 @@
 
         <div>
           <div class="hero-image-card" style="border:1px solid rgba(255,255,255,0.12);">
-            <img src="assets/images/consultoria-reuniao.jpg" alt="Reunião de consultoria e alinhamento estratégico na Concentre Contabilidade em Maceió" width="600" height="420" loading="lazy">
+            <picture>
+              <source srcset="assets/images/consultoria-reuniao.webp" type="image/webp">
+              <img src="assets/images/consultoria-reuniao.jpg" alt="Reunião de consultoria e alinhamento estratégico na Concentre Contabilidade em Maceió" width="600" height="420" loading="lazy" decoding="async">
+            </picture>
             <div class="hero-floating-badge" style="background:var(--color-graphite);border-color:rgba(255,255,255,0.15);color:var(--color-white);">
               <div class="badge-title" style="color:var(--color-orange);">Segurança &amp; LGPD Estrita</div>
               <div class="badge-desc" style="color:#D1D1CB;">Backups criptografados em nuvem, controle rigoroso de acessos e confidencialidade fiscal absoluta.</div>
@@ -1563,6 +1582,6 @@
     </div>
   </div>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>

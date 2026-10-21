@@ -663,10 +663,7 @@ img {
 
 /* Breadcrumbs (SEO & Navegação) */
 .breadcrumbs-bar {
-  background-color: var(--color-bg-light);
-  border-bottom: 1px solid var(--color-border-light);
-  padding: 12px 0;
-  font-size: 0.82rem;
+  display: none !important;
 }
 
 .breadcrumbs {

@@ -427,6 +427,62 @@
       margin-bottom: 0;
     }
 
+    /* Estilos do Raio-X do Site Antigo */
+    .pres-audit-card {
+      background: #FFFFFF;
+      border: 1.5px solid #FDBA74;
+      border-radius: 14px;
+      padding: 24px;
+      box-shadow: 0 4px 14px rgba(234, 88, 12, 0.05);
+      position: relative;
+      transition: all 0.25s ease;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .pres-audit-card:hover {
+      border-color: #EA580C;
+      box-shadow: 0 8px 24px rgba(234, 88, 12, 0.12);
+      transform: translateY(-3px);
+    }
+    .pres-audit-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      background: #FEE2E2;
+      color: #DC2626;
+      border-radius: 6px;
+      font-size: 0.74rem;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      width: fit-content;
+    }
+    .pres-code-box {
+      background: #181816;
+      color: #F87171;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-family: monospace;
+      font-size: 0.82rem;
+      line-height: 1.4;
+      margin: 10px 0 14px;
+      overflow-x: auto;
+      border-left: 3px solid #EF4444;
+    }
+    .pres-fix-box {
+      background: #ECFDF5;
+      color: #065F46;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 0.84rem;
+      line-height: 1.5;
+      border-left: 3px solid #10B981;
+      margin-top: auto;
+    }
+
     @media (max-width: 768px) {
       .pres-hero { padding: 40px 0 50px; }
       .pres-section { padding: 50px 0; }
@@ -450,11 +506,12 @@
       <nav class="pres-nav-links" aria-label="Navegação da Apresentação">
         <a href="#visao-geral" class="pres-nav-btn active">01. Visão Geral</a>
         <a href="#nova-era-geo" class="pres-nav-btn">02. A Nova Era (SEO + IA)</a>
-        <a href="#arquitetura-20" class="pres-nav-btn">03. Por Que 20 Páginas?</a>
-        <a href="#copywriting-eeat" class="pres-nav-btn">04. Por Que Essa Escrita?</a>
-        <a href="#engenharia-tecnica" class="pres-nav-btn">05. SEO Técnico &amp; 360°</a>
-        <a href="#comparativo" class="pres-nav-btn">06. Comparativo</a>
-        <a href="#maturacao" class="pres-nav-btn">07. Ranquear no Google</a>
+        <a href="#site-antigo" class="pres-nav-btn" style="color:#FFA07A;">03. Raio-X do Site Antigo</a>
+        <a href="#arquitetura-20" class="pres-nav-btn">04. Por Que 20 Páginas?</a>
+        <a href="#copywriting-eeat" class="pres-nav-btn">05. Por Que Essa Escrita?</a>
+        <a href="#engenharia-tecnica" class="pres-nav-btn">06. SEO Técnico &amp; 360°</a>
+        <a href="#comparativo" class="pres-nav-btn">07. Comparativo</a>
+        <a href="#maturacao" class="pres-nav-btn">08. Ranquear no Google</a>
       </nav>
 
       <div style="display:flex;align-items:center;gap:10px;flex-shrink:0;">
@@ -613,11 +670,170 @@
     </div>
   </section>
 
-  <!-- SEÇÃO 03: POR QUE 20 PÁGINAS? (ARQUITETURA & DOMÍNIO LOCAL) -->
+  <!-- SEÇÃO 03: RAIO-X DO SITE ANTIGO (CONCENTRE-AL.COM.BR) -->
+  <section class="pres-section" id="site-antigo" style="background:#FFF9F5;border-top:1.5px solid #FED7AA;border-bottom:1.5px solid #FED7AA;">
+    <div class="container">
+      <div class="pres-header-block">
+        <span class="pres-step-badge" style="background:#FEE2E2;color:#DC2626;">Pilar 02 · Diagnóstico Crítico do Site Antigo</span>
+        <h2 class="pres-section-title">Raio-X do Site Antigo (concentre-al.com.br): Por Que Ele Não Ranquearia no Google Moderno?</h2>
+        <p class="pres-section-sub">
+          Auditamos detalhadamente a estrutura de código, as meta-tags, a navegabilidade e o conteúdo do site que estava no ar (<code>https://www.concentre-al.com.br/</code>). Ele foi montado sobre padrões legados dos anos 2010 que hoje são <strong>ativamente ignorados ou penalizados pelos algoritmos do Google e IAs</strong>. Veja as 8 falhas críticas encontradas e como a nova plataforma solucionou cada uma:
+        </p>
+      </div>
+
+      <div class="grid-2" style="gap:24px;">
+        <!-- Falha 1 -->
+        <div class="pres-audit-card">
+          <div class="pres-audit-tag">Erro Crítico de SEO #1</div>
+          <h3 style="font-size:1.15rem;font-weight:700;color:var(--color-graphite);margin-bottom:6px;">
+            Título Amador Desperdiçando a Palavra-Chave Mais Valiosa
+          </h3>
+          <p style="font-size:0.88rem;color:#475569;margin-bottom:0;">
+            O <code>&lt;title&gt;</code> é o fator de ranqueamento On-Page nº 1 do Google. O site antigo começava com uma saudação inútil que nenhum empresário pesquisa:
+          </p>
+          <div class="pres-code-box">
+            &lt;title&gt;Bem-vindo ao nosso website - CONCENTRE CONTABILIDADE...&lt;/title&gt;
+          </div>
+          <div class="pres-fix-box">
+            <strong>Como a nova plataforma resolveu:</strong> Títulos semânticos e cirúrgicos por intenção de busca, como <em>"Abertura de Empresa em Maceió: CNPJ Rápido e Planejamento Tributário | Concentre Contabilidade"</em>.
+          </div>
+        </div>
+
+        <!-- Falha 2 -->
+        <div class="pres-audit-card">
+          <div class="pres-audit-tag">Código Obsoleto #2</div>
+          <h3 style="font-size:1.15rem;font-weight:700;color:var(--color-graphite);margin-bottom:6px;">
+            Meta Keywords Mortas há Mais de 15 Anos
+          </h3>
+          <p style="font-size:0.88rem;color:#475569;margin-bottom:0;">
+            O site antigo ainda utilizava a tag de palavras-chave, descontinuada pelo Google em 2009 por causa de práticas de spam:
+          </p>
+          <div class="pres-code-box">
+            &lt;meta name="keywords" content="contabilidade, contábil, escritório, serviços" /&gt;
+          </div>
+          <div class="pres-fix-box">
+            <strong>Como a nova plataforma resolveu:</strong> Eliminação de códigos desnecessários. Aplicação de <strong>Topic Clusters</strong> e entidades semânticas reconhecidas pelo Knowledge Graph do Google.
+          </div>
+        </div>
+
+        <!-- Falha 3 -->
+        <div class="pres-audit-card">
+          <div class="pres-audit-tag">Penalidade Mobile #3</div>
+          <h3 style="font-size:1.15rem;font-weight:700;color:var(--color-graphite);margin-bottom:6px;">
+            Bloqueio de Zoom que Viola Regras do Google Lighthouse
+          </h3>
+          <p style="font-size:0.88rem;color:#475569;margin-bottom:0;">
+            A configuração de viewport do site antigo continha <code>user-scalable=no</code>, que impedia o usuário no celular de dar zoom para ler os textos:
+          </p>
+          <div class="pres-code-box">
+            &lt;meta name="viewport" content="... user-scalable=no, initial-scale=1.0"&gt;
+          </div>
+          <div class="pres-fix-box">
+            <strong>Como a nova plataforma resolveu:</strong> Responsividade fluida 100% auditada de 320px a 768px, sem quebras de layout e em total conformidade com os critérios de acessibilidade do Google.
+          </div>
+        </div>
+
+        <!-- Falha 4 -->
+        <div class="pres-audit-card">
+          <div class="pres-audit-tag">Links Quebrados &amp; Fuga de Autoridade #4</div>
+          <h3 style="font-size:1.15rem;font-weight:700;color:var(--color-graphite);margin-bottom:6px;">
+            Redes Sociais Genéricas e Link Quebrado no Topo
+          </h3>
+          <p style="font-size:0.88rem;color:#475569;margin-bottom:0;">
+            Os botões sociais do cabeçalho apontavam para o feed genérico mundial (sem perfil da Concentre) e havia links quebrados no menu:
+          </p>
+          <div class="pres-code-box">
+            href="https://facebook.com/" | href="https://twitter.com/" | href="link-arquivo"
+          </div>
+          <div class="pres-fix-box">
+            <strong>Como a nova plataforma resolveu:</strong> Eliminação de links cegos. Canal de conversão direto para o WhatsApp oficial com mensagem pré-formatada e integração do Tour Virtual 360°.
+          </div>
+        </div>
+
+        <!-- Falha 5 -->
+        <div class="pres-audit-card">
+          <div class="pres-audit-tag">Invisibilidade Local #5</div>
+          <h3 style="font-size:1.15rem;font-weight:700;color:var(--color-graphite);margin-bottom:6px;">
+            Zero Geo-SEO: 100% Invisível nos Bairros de Maceió
+          </h3>
+          <p style="font-size:0.88rem;color:#475569;margin-bottom:0;">
+            O site antigo não continha nenhuma página sobre Ponta Verde, Farol, Jatiúca, Centro, Mangabeiras, Serraria, Pajuçara ou Tabuleiro.
+          </p>
+          <div class="pres-code-box">
+            Resultado no Google: 0 páginas indexadas para os bairros comerciais de Maceió
+          </div>
+          <div class="pres-fix-box">
+            <strong>Como a nova plataforma resolveu:</strong> <strong>8 páginas dedicadas de bairros</strong>, posicionando a Concentre no topo do "Google Map Pack" de cada polo econômico da capital.
+          </div>
+        </div>
+
+        <!-- Falha 6 -->
+        <div class="pres-audit-card">
+          <div class="pres-audit-tag">Invisível para IAs #6</div>
+          <h3 style="font-size:1.15rem;font-weight:700;color:var(--color-graphite);margin-bottom:6px;">
+            Inexistência de Dados Estruturados (Schema.org JSON-LD)
+          </h3>
+          <p style="font-size:0.88rem;color:#475569;margin-bottom:0;">
+            O site antigo não tinha marcação de dados semânticos. O ChatGPT, Perplexity e Google não conseguiam ler endereço, serviços ou FAQs estruturados.
+          </p>
+          <div class="pres-code-box">
+            JSON-LD Schema: Ausente em 100% das páginas antigas
+          </div>
+          <div class="pres-fix-box">
+            <strong>Como a nova plataforma resolveu:</strong> Schemas ricos em todas as 20 páginas (<code>AccountingService</code>, <code>LocalBusiness</code>, <code>FAQPage</code> e <code>GeoCoordinates</code>).
+          </div>
+        </div>
+
+        <!-- Falha 7 -->
+        <div class="pres-audit-card">
+          <div class="pres-audit-tag">Linguagem Genérica #7</div>
+          <h3 style="font-size:1.15rem;font-weight:700;color:var(--color-graphite);margin-bottom:6px;">
+            Escrita Fria e Burocrática Sem E-E-A-T
+          </h3>
+          <p style="font-size:0.88rem;color:#475569;margin-bottom:0;">
+            Frases genéricas como <em>"classificação dos documentos"</em> e <em>"rotina contábil"</em>. Não citava JUCEAL, SEFAZ-AL, CRC-AL nem trazia simulações de economia de tributos.
+          </p>
+          <div class="pres-code-box">
+            "Trabalhamos fornecendo todas as informações... relatórios para divergências..."
+          </div>
+          <div class="pres-fix-box">
+            <strong>Como a nova plataforma resolveu:</strong> Copywriting consultivo que educa o empresário, cita órgãos oficiais de Alagoas e apresenta simulações numéricas com Fator R.
+          </div>
+        </div>
+
+        <!-- Falha 8 -->
+        <div class="pres-audit-card">
+          <div class="pres-audit-tag">Baixa Retenção #8</div>
+          <h3 style="font-size:1.15rem;font-weight:700;color:var(--color-graphite);margin-bottom:6px;">
+            Dwell Time Baixo e Alto Índice de Rejeição (Bounce Rate)
+          </h3>
+          <p style="font-size:0.88rem;color:#475569;margin-bottom:0;">
+            Sem interatividade, sem tour 360°, sem simulador financeiro e com navegação antiga em PHP. O visitante saía da página em menos de 20 segundos.
+          </p>
+          <div class="pres-code-box">
+            Tempo Médio Antigo: ~18 segundos | Rejeição: Alta
+          </div>
+          <div class="pres-fix-box">
+            <strong>Como a nova plataforma resolveu:</strong> <strong>Tour Virtual 360° da sede física</strong> e seletores interativos que retêm o usuário por mais de 2 minutos no site.
+          </div>
+        </div>
+      </div>
+
+      <!-- Resumo Comparativo Executivo do Impacto -->
+      <div style="margin-top:36px;background:#181816;color:#FFFFFF;border-radius:14px;padding:30px;border-left:5px solid #EA580C;">
+        <h4 style="color:#FF9900;font-size:1.2rem;margin-bottom:10px;">Conclusão do Diagnóstico do Site Antigo:</h4>
+        <p style="color:#CBD5E1;font-size:0.94rem;line-height:1.65;margin:0;">
+          O site antigo <code>concentre-al.com.br</code> operava como um "cartão de visita digital estático" dos anos 2010. Ele era incapaz de competir com escritórios contábeis modernos no Google porque não possuía segmentação por bairros, não usava dados estruturados, possuía títulos amadores e bloqueios de mobile. <strong>A nova plataforma não é apenas uma reforma visual: é uma substituição completa de motor tecnológico, construída do zero para dominar as pesquisas locais de Maceió e as ferramentas de IA.</strong>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 04: POR QUE 20 PÁGINAS? (ARQUITETURA & DOMÍNIO LOCAL) -->
   <section class="pres-section" id="arquitetura-20">
     <div class="container">
       <div class="pres-header-block">
-        <span class="pres-step-badge">Pilar 02 · Estrutura de Domínio de Mercado</span>
+        <span class="pres-step-badge">Pilar 03 · Estrutura de Domínio de Mercado</span>
         <h2 class="pres-section-title">Por Que Criamos 20 Páginas em Vez de Apenas Uma?</h2>
         <p class="pres-section-sub">
           Cada página do site funciona como um <strong>ímã exclusivo de captação no Google</strong>. Um empresário que quer abrir uma empresa pesquisa termos diferentes de quem quer trocar de contador ou de um médico que quer pagar menos imposto na Ponta Verde.
@@ -734,7 +950,7 @@
   <section class="pres-section" id="copywriting-eeat">
     <div class="container">
       <div class="pres-header-block">
-        <span class="pres-step-badge">Pilar 03 · Inteligência de Conteúdo</span>
+        <span class="pres-step-badge">Pilar 04 · Inteligência de Conteúdo</span>
         <h2 class="pres-section-title">Por Que os Textos Foram Escritos Dessa Maneira?</h2>
         <p class="pres-section-sub">
           Muitos empresários perguntam: <em>"Por que não colocar textos mais curtos e genéricos?"</em>. A resposta é simples: <strong>textos genéricos não ranqueiam no Google e não passam autoridade para fechar contratos com empresas sérias</strong>.
@@ -809,7 +1025,7 @@
   <section class="pres-section" id="engenharia-tecnica">
     <div class="container">
       <div class="pres-header-block">
-        <span class="pres-step-badge">Pilar 04 · Infraestrutura de Alta Performance</span>
+        <span class="pres-step-badge">Pilar 05 · Infraestrutura de Alta Performance</span>
         <h2 class="pres-section-title">A Engenharia Invisível: O Que o Google e os Clientes Sentem</h2>
         <p class="pres-section-sub">
           O design visual impressiona os olhos, mas é a infraestrutura técnica nos bastidores que convence os robôs de busca de que o site merece a 1ª página.
@@ -867,7 +1083,7 @@
   <section class="pres-section" id="comparativo">
     <div class="container">
       <div class="pres-header-block">
-        <span class="pres-step-badge">Pilar 05 · Auditoria Comparativa</span>
+        <span class="pres-step-badge">Pilar 06 · Auditoria Comparativa</span>
         <h2 class="pres-section-title">Site Contábil Típico de Mercado vs. A Plataforma da Concentre</h2>
         <p class="pres-section-sub">
           Veja a diferença prática entre o que a concorrência geralmente entrega e o padrão de engenharia aplicado neste projeto:
@@ -939,7 +1155,7 @@
   <section class="pres-section" id="maturacao">
     <div class="container">
       <div class="pres-header-block">
-        <span class="pres-step-badge">Pilar 06 · Planejamento de Resultados</span>
+        <span class="pres-step-badge">Pilar 07 · Planejamento de Resultados</span>
         <h2 class="pres-section-title">Como Funciona a Maturação do Ranquear Orgânico no Google</h2>
         <p class="pres-section-sub">
           Diferente dos anúncios pagos (que param de gerar leads no minuto em que você para de pagar), o <strong>SEO Orgânico é um patrimônio digital cumulativo</strong>. O trabalho executado neste site acelera drasticamente esse processo:

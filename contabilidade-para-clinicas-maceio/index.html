@@ -520,34 +520,51 @@
     </div>
   </footer>
 
-  <!-- Modal do Tour Virtual 360° -->
-  <div class="modal-tour-overlay" id="tourModal" role="dialog" aria-modal="true" aria-label="Tour Virtual 360 Concentre Contabilidade">
-    <div class="modal-tour-container">
-      <div class="modal-tour-header">
-        <div class="modal-tour-title">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path><path d="M2 12h20"></path></svg>
-          <span>Conheça a Sede da Concentre: Farol, Maceió, AL</span>
+  <!-- Modal Popup Tela Cheia: Tour Virtual 360° Sede Concentre -->
+  <div class="tour-modal-overlay" id="tour-modal" role="dialog" aria-modal="true" aria-labelledby="tour-modal-title">
+    <div class="tour-modal-container">
+      <div class="tour-modal-topbar">
+        <div class="tour-modal-info">
+          <div class="tour-badge-360">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              <path d="M2 12h20"></path>
+            </svg>
+            <span>Tour Virtual 360°</span>
+          </div>
+          <div class="tour-title-wrap">
+            <h3 id="tour-modal-title" class="tour-modal-title">Conheça Nossa Sede no Farol</h3>
+            <span class="tour-modal-sub">Rua João Nogueira, 80, Maceió, AL • Concentre Contabilidade</span>
+          </div>
         </div>
-        <div class="modal-tour-actions">
-          <button type="button" class="btn-tour-fullscreen" id="tourFullscreenBtn" title="Alternar Tela Cheia">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path></svg>
+
+        <div class="tour-modal-actions">
+          <button type="button" class="tour-action-btn" id="tour-fullscreen-btn" title="Alternar Tela Cheia" aria-label="Alternar Tela Cheia">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path></svg>
             <span class="btn-text-desktop">Tela Cheia</span>
           </button>
-          <a href="https://tour.tudoem360.com.br/concentrecontabilidade/" target="_blank" rel="noopener" class="btn-tour-external" title="Abrir em Nova Aba">
+          <a href="https://tour.tudoem360.com.br/concentrecontabilidade/" target="_blank" rel="noopener" class="tour-action-btn" title="Abrir tour em nova aba" aria-label="Abrir em nova aba">
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
             <span class="btn-text-desktop">Nova Aba</span>
           </a>
-          <button type="button" class="modal-tour-close" id="tourCloseBtn" aria-label="Fechar tour virtual">&times;</button>
+          <button type="button" class="tour-close-btn" id="tour-close-btn" aria-label="Fechar tour virtual">
+            <span>&times;</span>
+          </button>
         </div>
       </div>
-      <div class="modal-tour-body">
-        <iframe
-          id="tourIframe"
+
+      <div class="tour-modal-viewport">
+        <div class="tour-loading-spinner" id="tour-spinner">
+          <div class="spinner-ring"></div>
+          <p>Carregando experiência imersiva 360° da Concentre...</p>
+        </div>
+        <iframe 
+          id="tour-iframe"
           data-src="https://tour.tudoem360.com.br/concentrecontabilidade/"
-          src="about:blank"
-          title="Tour Virtual 360 graus Concentre Contabilidade"
-          loading="lazy"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; xr-spatial-tracking"
+          src=""
+          title="Tour Virtual 360° Sede Concentre Contabilidade"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
           allowfullscreen>
         </iframe>
       </div>

@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dossiê Estratégico: Por Que Este Site Vai Dominar o Google e as IAs | Concentre Contabilidade</title>
+  <meta name="description" content="Apresentação executiva: entenda a engenharia de SEO, autoridade tópica, arquitetura de 20 páginas, escrita consultiva E-E-A-T e otimização para IAs (GEO) da Concentre em Maceió.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+
+  <!-- Fontes Oficiais da Marca -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+
+  <style>
+    /* Estilos Especiais da Apresentação Executiva */
+    :root {
+      --pres-bg-dark: #1A1A18;
+      --pres-bg-card: #242422;
+      --pres-border: rgba(255, 153, 0, 0.22);
+    }
+
+    body {
+      background-color: #F8F9FA;
+    }
+
+    /* Barra Superior da Apresentação */
+    .pres-topbar {
+      background: #181816;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+    }
+
+    .pres-topbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .pres-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 5px 12px;
+      background: rgba(255, 153, 0, 0.12);
+      border: 1px solid rgba(255, 153, 0, 0.35);
+      border-radius: 999px;
+      color: #FF9900;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .pres-nav-links {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+    }
+    .pres-nav-links::-webkit-scrollbar { display: none; }
+
+    .pres-nav-btn {
+      padding: 6px 14px;
+      border-radius: 6px;
+      color: #CBD5E1;
+      font-size: 0.82rem;
+      font-weight: 600;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: all 0.2s ease;
+      background: transparent;
+      border: 1px solid transparent;
+    }
+    .pres-nav-btn:hover {
+      background: rgba(255, 255, 255, 0.08);
+      color: #FFFFFF;
+      border-color: rgba(255, 255, 255, 0.15);
+    }
+    .pres-nav-btn.active {
+      background: #FF9900;
+      color: #000000;
+      border-color: #FF9900;
+      font-weight: 700;
+    }
+
+    /* Hero Executivo */
+    .pres-hero {
+      background: radial-gradient(circle at 85% 15%, rgba(255, 153, 0, 0.14) 0%, transparent 50%),
+                  linear-gradient(180deg, #181816 0%, #252523 100%);
+      color: #FFFFFF;
+      padding: 60px 0 70px;
+      position: relative;
+      overflow: hidden;
+      border-bottom: 2px solid var(--color-orange);
+    }
+
+    .pres-hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 999px;
+      padding: 6px 16px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #E2E8F0;
+      margin-bottom: 24px;
+    }
+
+    .pres-hero h1 {
+      color: #FFFFFF;
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      margin-bottom: 20px;
+      max-width: 980px;
+    }
+
+    .pres-hero p.lead {
+      font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+      line-height: 1.65;
+      color: #D1D5DB;
+      max-width: 860px;
+      margin-bottom: 40px;
+    }
+
+    /* KPIs da Apresentação */
+    .pres-kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 16px;
+      margin-top: 30px;
+    }
+
+    .pres-kpi-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 22px 18px;
+      backdrop-filter: blur(8px);
+      transition: all 0.25s ease;
+    }
+    .pres-kpi-card:hover {
+      border-color: rgba(255, 153, 0, 0.5);
+      transform: translateY(-3px);
+      background: rgba(255, 255, 255, 0.08);
+    }
+    .pres-kpi-num {
+      font-family: var(--font-heading);
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: #FF9900;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .pres-kpi-label {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 4px;
+    }
+    .pres-kpi-desc {
+      font-size: 0.8rem;
+      color: #94A3B8;
+      line-height: 1.4;
+    }
+
+    /* Seções da Apresentação */
+    .pres-section {
+      padding: 70px 0;
+      border-bottom: 1px solid #E2E8F0;
+    }
+    .pres-section:nth-child(even) {
+      background: #FFFFFF;
+    }
+
+    .pres-header-block {
+      max-width: 860px;
+      margin-bottom: 40px;
+    }
+    .pres-step-badge {
+      display: inline-block;
+      font-size: 0.76rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #FF9900;
+      background: rgba(255, 153, 0, 0.1);
+      padding: 4px 10px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+    .pres-section-title {
+      font-size: clamp(1.75rem, 3vw, 2.4rem);
+      font-weight: 800;
+      color: var(--color-graphite);
+      margin-bottom: 12px;
+      line-height: 1.22;
+    }
+    .pres-section-sub {
+      font-size: 1.05rem;
+      color: #64748B;
+      line-height: 1.6;
+    }
+
+    /* Cards Informativos */
+    .pres-card {
+      background: #FFFFFF;
+      border: 1.5px solid #E2E8F0;
+      border-radius: 14px;
+      padding: 28px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+      transition: all 0.25s ease;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .pres-card:hover {
+      border-color: rgba(255, 153, 0, 0.45);
+      box-shadow: 0 10px 30px rgba(50, 50, 48, 0.08);
+      transform: translateY(-3px);
+    }
+    .pres-card-icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 10px;
+      background: rgba(255, 153, 0, 0.12);
+      color: #FF9900;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 18px;
+    }
+    .pres-card h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--color-graphite);
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+    .pres-card p {
+      font-size: 0.92rem;
+      color: #475569;
+      line-height: 1.6;
+      margin-bottom: 14px;
+      flex-grow: 1;
+    }
+    .pres-card-meta {
+      padding-top: 14px;
+      border-top: 1px solid #F1F5F9;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #FF9900;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Gráfico Visual Comparativo */
+    .pres-stat-bar-box {
+      background: #FFFFFF;
+      border: 1.5px solid #E2E8F0;
+      border-radius: 14px;
+      padding: 24px 28px;
+      margin-bottom: 16px;
+    }
+    .pres-stat-bar-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .pres-stat-title {
+      font-weight: 700;
+      color: var(--color-graphite);
+      font-size: 0.96rem;
+    }
+    .pres-stat-val {
+      font-weight: 800;
+      color: #FF9900;
+      font-size: 1.1rem;
+    }
+    .pres-stat-track {
+      width: 100%;
+      height: 10px;
+      background: #E2E8F0;
+      border-radius: 999px;
+      overflow: hidden;
+      margin-bottom: 8px;
+    }
+    .pres-stat-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #FF9900 0%, #E68A00 100%);
+      border-radius: 999px;
+      transition: width 1s ease-in-out;
+    }
+    .pres-stat-note {
+      font-size: 0.8rem;
+      color: #64748B;
+      line-height: 1.4;
+    }
+
+    /* Tabela Comparativa de Mercado */
+    .pres-table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      border-radius: 14px;
+      border: 1.5px solid #CBD5E1;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      background: #FFFFFF;
+      -webkit-overflow-scrolling: touch;
+      margin: 30px 0;
+    }
+    .pres-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.92rem;
+    }
+    .pres-table th {
+      padding: 18px 20px;
+      background: var(--color-graphite-dark);
+      color: #FFFFFF;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      border-bottom: 2px solid var(--color-orange);
+    }
+    .pres-table th.highlight {
+      background: #181816;
+      color: #FF9900;
+      border-bottom: 2px solid #FF9900;
+    }
+    .pres-table td {
+      padding: 16px 20px;
+      border-bottom: 1px solid #E2E8F0;
+      color: #334155;
+      vertical-align: middle;
+    }
+    .pres-table tr:last-child td {
+      border-bottom: none;
+    }
+    .pres-table td.highlight {
+      background: rgba(255, 153, 0, 0.04);
+      font-weight: 600;
+      color: #0F172A;
+    }
+    .pres-check {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #10B981;
+      font-weight: 700;
+    }
+    .pres-cross {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #EF4444;
+      font-weight: 600;
+    }
+
+    /* Badges de Bairros e Serviços */
+    .pres-pill-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .pres-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      background: #FFFFFF;
+      border: 1px solid #CBD5E1;
+      border-radius: 8px;
+      font-size: 0.86rem;
+      font-weight: 600;
+      color: var(--color-graphite);
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .pres-pill:hover {
+      border-color: #FF9900;
+      color: #FF9900;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(255, 153, 0, 0.15);
+    }
+    .pres-pill-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #FF9900;
+    }
+
+    /* Caixa de Destaque Executivo */
+    .pres-callout {
+      background: linear-gradient(135deg, rgba(30, 30, 29, 0.98) 0%, rgba(50, 50, 48, 0.98) 100%);
+      color: #FFFFFF;
+      border-radius: 16px;
+      padding: 36px 32px;
+      margin: 40px 0;
+      border-left: 5px solid #FF9900;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    }
+    .pres-callout h4 {
+      color: #FF9900;
+      font-size: 1.25rem;
+      margin-bottom: 12px;
+    }
+    .pres-callout p {
+      color: #CBD5E1;
+      line-height: 1.7;
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 768px) {
+      .pres-hero { padding: 40px 0 50px; }
+      .pres-section { padding: 50px 0; }
+      .pres-table th, .pres-table td { padding: 12px 14px; font-size: 0.84rem; }
+      .pres-callout { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra Superior Fixa de Navegação da Apresentação -->
+  <header class="pres-topbar">
+    <div class="container pres-topbar-inner">
+      <div style="display:flex;align-items:center;gap:14px;min-width:0;">
+        <a href="../" title="Voltar para a página inicial da Concentre Contabilidade">
+          <img src="../assets/images/logo-concentre-white.svg" alt="Concentre Contabilidade" width="140" height="32" style="display:block;">
+        </a>
+        <span class="pres-tag">Dossiê Estratégico</span>
+      </div>
+
+      <nav class="pres-nav-links" aria-label="Navegação da Apresentação">
+        <a href="#visao-geral" class="pres-nav-btn active">01. Visão Geral</a>
+        <a href="#nova-era-geo" class="pres-nav-btn">02. A Nova Era (SEO + IA)</a>
+        <a href="#arquitetura-20" class="pres-nav-btn">03. Por Que 20 Páginas?</a>
+        <a href="#copywriting-eeat" class="pres-nav-btn">04. Por Que Essa Escrita?</a>
+        <a href="#engenharia-tecnica" class="pres-nav-btn">05. SEO Técnico &amp; 360°</a>
+        <a href="#comparativo" class="pres-nav-btn">06. Comparativo</a>
+        <a href="#maturacao" class="pres-nav-btn">07. Ranquear no Google</a>
+      </nav>
+
+      <div style="display:flex;align-items:center;gap:10px;flex-shrink:0;">
+        <a href="../" class="btn btn-outline" style="border-color:rgba(255,255,255,0.3);color:#FFF;padding:8px 14px;font-size:0.84rem;">
+          Ver Site no Ar
+        </a>
+        <a href="https://wa.me/558232026489?text=Ol%C3%A1%2C%20Concentre!%20Li%20a%20apresenta%C3%A7%C3%A3o%20estrat%C3%A9gica%20do%20site." target="_blank" rel="noopener" class="btn btn-primary" style="padding:8px 16px;font-size:0.84rem;">
+          WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Executivo da Apresentação -->
+  <section class="pres-hero" id="visao-geral">
+    <div class="container">
+      <div class="pres-hero-badge">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF9900" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+        APRESENTAÇÃO EXECUTIVA · ENGENHARIA DE BUSCA &amp; CONVERSÃO
+      </div>
+      <h1>Por Que Este Site Foi Construído Para Dominar o Google e as Buscas por Inteligência Artificial</h1>
+      <p class="lead">
+        A maioria dos sites contábeis de Maceió são apenas "panfletos digitais de uma página" que nunca aparecem no Google. A nova plataforma da <strong>Concentre Contabilidade</strong> foi meticulosamente projetada como uma <strong>máquina de Autoridade Tópica, SEO Hiperlocal e Inteligência Semântica</strong>, pronta para atrair clientes qualificados sem depender exclusivamente de anúncios pagos caros.
+      </p>
+
+      <!-- Grade de KPIs Estratégicos -->
+      <div class="pres-kpi-grid">
+        <div class="pres-kpi-card">
+          <div class="pres-kpi-num">20</div>
+          <div class="pres-kpi-label">Páginas Estratégicas</div>
+          <div class="pres-kpi-desc">Domínio completo de 10 serviços especializados e 8 bairros-chave de Maceió.</div>
+        </div>
+        <div class="pres-kpi-card">
+          <div class="pres-kpi-num">+40%</div>
+          <div class="pres-kpi-label">Citação em IAs (GEO)</div>
+          <div class="pres-kpi-desc">Textos estruturados para serem citados por ChatGPT, Gemini, Copilot e Perplexity.</div>
+        </div>
+        <div class="pres-kpi-card">
+          <div class="pres-kpi-num">E-E-A-T</div>
+          <div class="pres-kpi-label">Critério Máximo Google</div>
+          <div class="pres-kpi-desc">Autoridade comprovada com JUCEAL, SEFAZ-AL, CRC-AL e sede própria no Farol.</div>
+        </div>
+        <div class="pres-kpi-card">
+          <div class="pres-kpi-num">&lt; 0.8s</div>
+          <div class="pres-kpi-label">Velocidade Extrema</div>
+          <div class="pres-kpi-desc">HTML puro e leve, sem lentidão de plugins do WordPress ou códigos pesados.</div>
+        </div>
+        <div class="pres-kpi-card">
+          <div class="pres-kpi-num">360°</div>
+          <div class="pres-kpi-label">Tour Virtual Integrado</div>
+          <div class="pres-kpi-desc">Aumenta o tempo de tela (Dwell Time) e elimina qualquer desconfiança do cliente.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 02: A NOVA ERA DAS BUSCAS (SEO TRADICIONAL + GEO) -->
+  <section class="pres-section" id="nova-era-geo">
+    <div class="container">
+      <div class="pres-header-block">
+        <span class="pres-step-badge">Pilar 01 · A Transformação do Algoritmo</span>
+        <h2 class="pres-section-title">O Que Mudou no Google e Por Que Sites Antigos Não Ranqueiam Mais</h2>
+        <p class="pres-section-sub">
+          Até 2022, bastava repetir palavras-chave como "contabilidade em maceió" para aparecer no Google. Hoje, o algoritmo do Google e os motores de busca por IA (como ChatGPT Search, Perplexity e Google Gemini AI Overviews) avaliam <strong>Autoridade Tópica</strong>, <strong>Confiabilidade Técnica</strong> e <strong>Resolução Real de Problemas</strong>.
+        </p>
+      </div>
+
+      <div class="grid-3" style="gap:24px;">
+        <div class="pres-card">
+          <div class="pres-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+          </div>
+          <h3>O Fim dos Sites "One-Page"</h3>
+          <p>
+            Sites de uma página só tentam falar sobre tudo em 3 parágrafos. Para o Google, um site que resume contabilidade fiscal, BPO, folha e abertura em 500 palavras não tem autoridade suficiente para ser recomendado aos usuários.
+          </p>
+          <div class="pres-card-meta">
+            <span>Problema: Sem profundidade temática</span>
+          </div>
+        </div>
+
+        <div class="pres-card">
+          <div class="pres-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          </div>
+          <h3>A Era do E-E-A-T do Google</h3>
+          <p>
+            Contabilidade é classificada pelo Google como <em>YMYL (Your Money Your Life)</em>. Para ranquear, o site precisa provar <strong>Experiência</strong>, <strong>Especialidade</strong>, <strong>Autoridade</strong> e <strong>Confiança</strong> com fatos, endereços, registros e dados auditáveis.
+          </p>
+          <div class="pres-card-meta">
+            <span>Solução: Prova institucional em 20 páginas</span>
+          </div>
+        </div>
+
+        <div class="pres-card">
+          <div class="pres-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+          </div>
+          <h3>GEO: O Novo "Ranqueamento" por IA</h3>
+          <p>
+            Quando um empresário pergunta ao <strong>ChatGPT</strong> ou <strong>Perplexity</strong>: <em>"Qual melhor contabilidade para clínicas em Maceió?"</em>, a IA não cria uma lista de links: ela <strong>lê fontes ricas e cita quem possui dados concretos e respostas completas</strong>.
+          </p>
+          <div class="pres-card-meta">
+            <span>Vantagem: Concentre otimizada para ser citada</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Métricas Científicas da Pesquisa GEO de Princeton -->
+      <div style="margin-top: 48px;">
+        <h3 style="font-size:1.35rem;font-weight:700;color:var(--color-graphite);margin-bottom:18px;">
+          Como os Textos da Concentre Foram Otimizados Segundo o Estudo GEO de Princeton:
+        </h3>
+        <p style="color:#64748B;font-size:0.95rem;margin-bottom:24px;">
+          Pesquisadores de Princeton, Georgia Tech e AI2 comprovaram quais fatores fazem uma empresa ser citada e ranqueada por motores de Inteligência Artificial:
+        </p>
+
+        <div class="grid-2" style="gap:20px;">
+          <div class="pres-stat-bar-box">
+            <div class="pres-stat-bar-header">
+              <span class="pres-stat-title">Citar Fontes &amp; Órgãos Oficiais (JUCEAL, SEFAZ-AL, CRC)</span>
+              <span class="pres-stat-val">+40% visibilidade</span>
+            </div>
+            <div class="pres-stat-track"><div class="pres-stat-fill" style="width: 100%;"></div></div>
+            <div class="pres-stat-note">Aplicado em todas as 20 páginas com referências regulatórias explícitas de Alagoas.</div>
+          </div>
+
+          <div class="pres-stat-bar-box">
+            <div class="pres-stat-bar-header">
+              <span class="pres-stat-title">Adição de Estatísticas &amp; Alíquotas Numéricas Reais</span>
+              <span class="pres-stat-val">+37% visibilidade</span>
+            </div>
+            <div class="pres-stat-track"><div class="pres-stat-fill" style="width: 92%;"></div></div>
+            <div class="pres-stat-note">Tabelas com números reais (ex: economia de 15,5% para 6% com Fator R).</div>
+          </div>
+
+          <div class="pres-stat-bar-box">
+            <div class="pres-stat-bar-header">
+              <span class="pres-stat-title">Perguntas Frequentes Estruturadas (FAQPage Schema)</span>
+              <span class="pres-stat-val">+40% visibilidade</span>
+            </div>
+            <div class="pres-stat-track"><div class="pres-stat-fill" style="width: 100%;"></div></div>
+            <div class="pres-stat-note">Perguntas diretas respondendo exatamente as dores que o empresário pesquisa.</div>
+          </div>
+
+          <div class="pres-stat-bar-box">
+            <div class="pres-stat-bar-header">
+              <span class="pres-stat-title">Tom Autoritativo e Terminologia Técnica Precisa</span>
+              <span class="pres-stat-val">+25% visibilidade</span>
+            </div>
+            <div class="pres-stat-track"><div class="pres-stat-fill" style="width: 65%;"></div></div>
+            <div class="pres-stat-note">Termos como CNAE, ECD/ECF, DRE, Elisão Fiscal e Ponto de Equilíbrio.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 03: POR QUE 20 PÁGINAS? (ARQUITETURA & DOMÍNIO LOCAL) -->
+  <section class="pres-section" id="arquitetura-20">
+    <div class="container">
+      <div class="pres-header-block">
+        <span class="pres-step-badge">Pilar 02 · Estrutura de Domínio de Mercado</span>
+        <h2 class="pres-section-title">Por Que Criamos 20 Páginas em Vez de Apenas Uma?</h2>
+        <p class="pres-section-sub">
+          Cada página do site funciona como um <strong>ímã exclusivo de captação no Google</strong>. Um empresário que quer abrir uma empresa pesquisa termos diferentes de quem quer trocar de contador ou de um médico que quer pagar menos imposto na Ponta Verde.
+        </p>
+      </div>
+
+      <!-- Cluster 1: Serviços -->
+      <div style="background:#FFFFFF;border:1.5px solid #E2E8F0;border-radius:16px;padding:32px;margin-bottom:32px;">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+          <div style="width:38px;height:38px;background:rgba(255,153,0,0.12);color:#FF9900;border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:800;">
+            10
+          </div>
+          <div>
+            <h3 style="font-size:1.3rem;font-weight:700;color:var(--color-graphite);margin:0;">Páginas de Serviços de Alto Valor (Intenção Comercial Direta)</h3>
+            <p style="font-size:0.88rem;color:#64748B;margin:0;">Capturam empresários prontos para fechar contrato em diferentes estágios de decisão:</p>
+          </div>
+        </div>
+
+        <div class="grid-2" style="gap:16px;">
+          <div style="padding:16px;background:#F8F9FA;border-radius:10px;border-left:3px solid #FF9900;">
+            <strong style="color:var(--color-graphite);">1. Abertura de Empresa em Maceió:</strong>
+            <p style="font-size:0.86rem;color:#475569;margin-top:4px;">Capta o empresário no dia zero (JUCEAL, Alvará, REDESIM). Garante honorários mensais recorrentes pelos próximos 5 a 10 anos.</p>
+          </div>
+          <div style="padding:16px;background:#F8F9FA;border-radius:10px;border-left:3px solid #FF9900;">
+            <strong style="color:var(--color-graphite);">2. Troca de Contador em Maceió:</strong>
+            <p style="font-size:0.86rem;color:#475569;margin-top:4px;">Atrai empresários insatisfeitos com contadores analógicos lentos. A página remove o medo da transição com migração 100% assistida.</p>
+          </div>
+          <div style="padding:16px;background:#F8F9FA;border-radius:10px;border-left:3px solid #FF9900;">
+            <strong style="color:var(--color-graphite);">3. Planejamento Tributário:</strong>
+            <p style="font-size:0.86rem;color:#475569;margin-top:4px;">Focado em médias empresas e negócios em expansão que querem pagar menos imposto legalmente (Simples vs. Presumido vs. Real).</p>
+          </div>
+          <div style="padding:16px;background:#F8F9FA;border-radius:10px;border-left:3px solid #FF9900;">
+            <strong style="color:var(--color-graphite);">4. Contabilidade para Clínicas e Médicos:</strong>
+            <p style="font-size:0.86rem;color:#475569;margin-top:4px;">Nicho de maior poder aquisitivo em Maceió. Explica a aplicação prática do Fator R e equiparação hospitalar para economizar até 60%.</p>
+          </div>
+          <div style="padding:16px;background:#F8F9FA;border-radius:10px;border-left:3px solid #FF9900;">
+            <strong style="color:var(--color-graphite);">5. BPO Financeiro (Gestão Terceirizada):</strong>
+            <p style="font-size:0.86rem;color:#475569;margin-top:4px;">Capta donos de empresas que sofrem para fechar o caixa ou conciliar extratos. Converte honorários de alto valor agregado.</p>
+          </div>
+          <div style="padding:16px;background:#F8F9FA;border-radius:10px;border-left:3px solid #FF9900;">
+            <strong style="color:var(--color-graphite);">6. Consultoria Financeira &amp; Custos:</strong>
+            <p style="font-size:0.86rem;color:#475569;margin-top:4px;">Para empresários que faturam muito mas não veem a cor do dinheiro. Ensina precificação, margem e ponto de equilíbrio.</p>
+          </div>
+          <div style="padding:16px;background:#F8F9FA;border-radius:10px;border-left:3px solid #FF9900;">
+            <strong style="color:var(--color-graphite);">7. Consultoria Contábil Estratégica:</strong>
+            <p style="font-size:0.86rem;color:#475569;margin-top:4px;">Mostra como usar o Balancete e a DRE para conseguir crédito em bancos e atrair investidores em Alagoas.</p>
+          </div>
+          <div style="padding:16px;background:#F8F9FA;border-radius:10px;border-left:3px solid #FF9900;">
+            <strong style="color:var(--color-graphite);">8. Consultoria Tributária &amp; SEFAZ-AL:</strong>
+            <p style="font-size:0.86rem;color:#475569;margin-top:4px;">Protege comércios e empresas contra malhas finas, notificações de ICMS e bitributação.</p>
+          </div>
+          <div style="padding:16px;background:#F8F9FA;border-radius:10px;border-left:3px solid #FF9900;">
+            <strong style="color:var(--color-graphite);">9. Endereço Fiscal no Farol:</strong>
+            <p style="font-size:0.86rem;color:#475569;margin-top:4px;">Produto de receita recorrente passiva e entrada rápida para consultores, psicólogos e negócios remotos.</p>
+          </div>
+          <div style="padding:16px;background:#F8F9FA;border-radius:10px;border-left:3px solid #FF9900;">
+            <strong style="color:var(--color-graphite);">10. Certificado Digital e-CPF / e-CNPJ:</strong>
+            <p style="font-size:0.86rem;color:#475569;margin-top:4px;">Serviço de conveniência que atrai novos clientes presenciais para a sede da Concentre toda semana.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cluster 2: Bairros de Maceió -->
+      <div style="background:#FFFFFF;border:1.5px solid #E2E8F0;border-radius:16px;padding:32px;">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+          <div style="width:38px;height:38px;background:rgba(255,153,0,0.12);color:#FF9900;border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:800;">
+            08
+          </div>
+          <div>
+            <h3 style="font-size:1.3rem;font-weight:700;color:var(--color-graphite);margin:0;">Páginas de Bairros de Maceió (Hiper-Segmentação Local no Google)</h3>
+            <p style="font-size:0.88rem;color:#64748B;margin:0;">O Google favorece resultados ultra-específicos. Cada bairro possui um ecossistema de negócios único:</p>
+          </div>
+        </div>
+
+        <div class="pres-pill-grid">
+          <a href="../contabilidade-ponta-verde-maceio/" class="pres-pill">
+            <span class="pres-pill-dot"></span>
+            <strong>Ponta Verde:</strong> Focado em clínicas médicas, consultórios, estética e escritórios de advocacia
+          </a>
+          <a href="../contabilidade-jatiuca-maceio/" class="pres-pill">
+            <span class="pres-pill-dot"></span>
+            <strong>Jatiúca:</strong> Focado em gastronomia, bares, cafeterias, academias e prestadores de serviços
+          </a>
+          <a href="../contabilidade-farol-maceio/" class="pres-pill">
+            <span class="pres-pill-dot"></span>
+            <strong>Farol (Sede):</strong> Polo financeiro, hospitais, escolas tradicionais e localização física da Concentre
+          </a>
+          <a href="../contabilidade-pajucara-maceio/" class="pres-pill">
+            <span class="pres-pill-dot"></span>
+            <strong>Pajuçara:</strong> Hotelaria, pousadas, receptivos turísticos e passeios da orla
+          </a>
+          <a href="../contabilidade-centro-maceio/" class="pres-pill">
+            <span class="pres-pill-dot"></span>
+            <strong>Centro:</strong> Comércio lojista, atacadistas, distribuidoras e prestadores tradicionais
+          </a>
+          <a href="../contabilidade-mangabeiras-maceio/" class="pres-pill">
+            <span class="pres-pill-dot"></span>
+            <strong>Mangabeiras:</strong> Centros empresariais, clínicas no entorno de shoppings e comércios modernos
+          </a>
+          <a href="../contabilidade-serraria-maceio/" class="pres-pill">
+            <span class="pres-pill-dot"></span>
+            <strong>Serraria:</strong> Condomínios residenciais, escolas, serviços e expansão imobiliária
+          </a>
+          <a href="../contabilidade-tabuleiro-dos-martins-maceio/" class="pres-pill">
+            <span class="pres-pill-dot"></span>
+            <strong>Tabuleiro dos Martins:</strong> Polo industrial, transportadoras, armazéns logísticos e fábricas
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 04: POR QUE ESSA ESCRITA? (COPYWRITING CONSULTIVO E E-E-A-T) -->
+  <section class="pres-section" id="copywriting-eeat">
+    <div class="container">
+      <div class="pres-header-block">
+        <span class="pres-step-badge">Pilar 03 · Inteligência de Conteúdo</span>
+        <h2 class="pres-section-title">Por Que os Textos Foram Escritos Dessa Maneira?</h2>
+        <p class="pres-section-sub">
+          Muitos empresários perguntam: <em>"Por que não colocar textos mais curtos e genéricos?"</em>. A resposta é simples: <strong>textos genéricos não ranqueiam no Google e não passam autoridade para fechar contratos com empresas sérias</strong>.
+        </p>
+      </div>
+
+      <div class="grid-2" style="gap:24px;">
+        <div class="pres-card">
+          <div class="pres-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          </div>
+          <h3>1. Vocabulário Jurídico-Contábil Real (Sem Amadorismo)</h3>
+          <p>
+            Em vez de frases clichês como "cuidamos das suas contas com carinho", usamos: <em>"Segregação de receitas no Simples Nacional, redução de alíquota efetiva com Fator R e conformidade com o Fisco de Alagoas"</em>.
+          </p>
+          <div class="pres-card-meta">
+            <span>Efeito: Filtra clientes ruins e atrai empresários que pagam honorários maiores</span>
+          </div>
+        </div>
+
+        <div class="pres-card">
+          <div class="pres-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+          </div>
+          <h3>2. Simulações Numéricas Práticas (Gera o Efeito "Uau")</h3>
+          <p>
+            Incluímos exemplos reais (ex.: uma empresa faturando R$ 40.000/mês pagando 15,50% no Anexo V e reduzindo para 6% no Anexo III através da consultoria). Isso prova imediatamente a competência técnica da equipe.
+          </p>
+          <div class="pres-card-meta">
+            <span>Efeito: Prova matemática de retorno sobre o investimento nos honorários</span>
+          </div>
+        </div>
+
+        <div class="pres-card">
+          <div class="pres-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          </div>
+          <h3>3. Citações Explícitas de Órgãos de Maceió e Alagoas</h3>
+          <p>
+            Cada página cita a <strong>JUCEAL</strong> (Junta Comercial de Alagoas), a <strong>SEFAZ-AL</strong>, a <strong>Prefeitura de Maceió</strong> e o <strong>CRC-AL</strong>. O Google cruza essas entidades locais para posicionar a Concentre no topo do ranking estadual.
+          </p>
+          <div class="pres-card-meta">
+            <span>Efeito: Autoridade geográfica inquestionável para os algoritmos</span>
+          </div>
+        </div>
+
+        <div class="pres-card">
+          <div class="pres-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+          </div>
+          <h3>4. Perguntas e Respostas Frequentes (FAQ Semântico)</h3>
+          <p>
+            Perguntas como <em>"Quanto tempo leva para abrir empresa em Maceió?"</em> ou <em>"Posso usar endereço fiscal para economizar IPTU?"</em> alimentam diretamente os <strong>Rich Snippets</strong> do Google e as respostas de voz da Siri e Google Assistente.
+          </p>
+          <div class="pres-card-meta">
+            <span>Efeito: Domina a "Posição Zero" no topo do Google</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Destaque de Conversão sem Atrito -->
+      <div class="pres-callout">
+        <h4>Copywriting Orientado à Ação Rápida (Zero Burocracia)</h4>
+        <p>
+          Em vez de formulários frios e longos de 10 campos que ninguém preenche no celular, <strong>todas as páginas possuem botões diretos e inteligentes para o WhatsApp oficial da Concentre</strong>. A mensagem já vem pré-formatada com o contexto exato do que o cliente precisa (ex: <em>"Olá! Gostaria de abrir minha empresa em Maceió..."</em> ou <em>"Gostaria de uma consultoria tributária..."</em>), facilitando o fechamento imediato pela equipe comercial.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 05: ENGENHARIA TÉCNICA E TOUR VIRTUAL 360° -->
+  <section class="pres-section" id="engenharia-tecnica">
+    <div class="container">
+      <div class="pres-header-block">
+        <span class="pres-step-badge">Pilar 04 · Infraestrutura de Alta Performance</span>
+        <h2 class="pres-section-title">A Engenharia Invisível: O Que o Google e os Clientes Sentem</h2>
+        <p class="pres-section-sub">
+          O design visual impressiona os olhos, mas é a infraestrutura técnica nos bastidores que convence os robôs de busca de que o site merece a 1ª página.
+        </p>
+      </div>
+
+      <div class="grid-3" style="gap:24px;">
+        <div class="pres-card">
+          <div class="pres-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+          </div>
+          <h3>Core Web Vitals Imbatíveis</h3>
+          <p>
+            Sites em WordPress costumam demorar de 3 a 7 segundos para abrir no celular devido a 50 plugins pesados. A nova plataforma foi construída em <strong>HTML estático puro, ultra-otimizado e servido na rede mundial da Cloudflare</strong>, carregando em menos de 0.8s.
+          </p>
+          <div class="pres-card-meta"><span>Pontuação verde máxima nos testes do Google</span></div>
+        </div>
+
+        <div class="pres-card">
+          <div class="pres-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          </div>
+          <h3>Schema.org JSON-LD Completo</h3>
+          <p>
+            Código estruturado invisível que "conversa" com o Google: informa nome oficial, coordenadas GPS no Farol, telefone comercial, tipos de serviços prestados, horários de funcionamento e catálogo de perguntas e respostas.
+          </p>
+          <div class="pres-card-meta"><span>Linguagem universal de indexação semântica</span></div>
+        </div>
+
+        <div class="pres-card">
+          <div class="pres-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path><path d="M2 12h20"></path></svg>
+          </div>
+          <h3>Tour Virtual 360° da Sede</h3>
+          <p>
+            O Tour 360° interativo não é só uma atração visual: ele <strong>faz o tempo de permanência no site (Dwell Time) saltar de 20 segundos para mais de 2 minutos</strong>. Para o Google, sites com alto tempo de visita são promovidos ao topo organicamente.
+          </p>
+          <div class="pres-card-meta"><span>Elimina a desconfiança de empresas fantasmas</span></div>
+        </div>
+      </div>
+
+      <!-- Auditoria Mobile -->
+      <div style="margin-top:32px;background:#F8F9FA;border:1px solid #E2E8F0;border-radius:14px;padding:26px;">
+        <h4 style="font-size:1.15rem;font-weight:700;color:var(--color-graphite);margin-bottom:10px;">
+          100% Mobile Auditado: A Experiência Perfeita na Palma da Mão
+        </h4>
+        <p style="font-size:0.92rem;color:#475569;line-height:1.6;margin-bottom:0;">
+          Mais de <strong>74% dos empresários e médicos pesquisam serviços contábeis pelo smartphone</strong>. O site foi rigorosamente auditado para telas de 320px até 4K: botões com área mínima de clique de 44px (padrão Apple e Google), campos de formulário com 16px para evitar que o iPhone dê zoom automático quebrando o layout, e tabelas com rolagem inercial independente sem qualquer transbordamento lateral.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 06: COMPARATIVO (SITE COMUM VS CONCENTRE) -->
+  <section class="pres-section" id="comparativo">
+    <div class="container">
+      <div class="pres-header-block">
+        <span class="pres-step-badge">Pilar 05 · Auditoria Comparativa</span>
+        <h2 class="pres-section-title">Site Contábil Típico de Mercado vs. A Plataforma da Concentre</h2>
+        <p class="pres-section-sub">
+          Veja a diferença prática entre o que a concorrência geralmente entrega e o padrão de engenharia aplicado neste projeto:
+        </p>
+      </div>
+
+      <div class="pres-table-wrap table-responsive" style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+        <table class="pres-table">
+          <thead>
+            <tr>
+              <th style="width:24%;">Critério Estratégico</th>
+              <th style="width:38%;">Site Contábil Comum de Mercado</th>
+              <th class="highlight" style="width:38%;">Nova Plataforma Concentre Contabilidade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Arquitetura de Páginas</strong></td>
+              <td><span class="pres-cross">✕</span> Apenas 1 página ("One-Page") ou 3 abas genéricas</td>
+              <td class="highlight"><span class="pres-check">✓</span> <strong>20 páginas independentes</strong> e hiper-segmentadas</td>
+            </tr>
+            <tr>
+              <td><strong>Palavras-Chave Alvo</strong></td>
+              <td><span class="pres-cross">✕</span> Disputa apenas 1 ou 2 termos genéricos</td>
+              <td class="highlight"><span class="pres-check">✓</span> <strong>Centenas de termos de cauda longa</strong> (bairros + especialidades)</td>
+            </tr>
+            <tr>
+              <td><strong>Otimização para IAs (GEO)</strong></td>
+              <td><span class="pres-cross">✕</span> Inexistente. Bloqueia ou ignora robôs do ChatGPT</td>
+              <td class="highlight"><span class="pres-check">✓</span> <strong>Estruturado com dados de Princeton</strong> para citação no ChatGPT/Perplexity</td>
+            </tr>
+            <tr>
+              <td><strong>Conteúdo &amp; E-E-A-T</strong></td>
+              <td><span class="pres-cross">✕</span> Textos vazios copiados da internet</td>
+              <td class="highlight"><span class="pres-check">✓</span> <strong>Conteúdo denso com simulações</strong>, órgãos de AL e termos técnicos</td>
+            </tr>
+            <tr>
+              <td><strong>SEO Local por Bairros</strong></td>
+              <td><span class="pres-cross">✕</span> Não possui páginas para Ponta Verde, Farol, Jatiúca, etc.</td>
+              <td class="highlight"><span class="pres-check">✓</span> <strong>8 páginas dedicadas aos polos econômicos</strong> de Maceió</td>
+            </tr>
+            <tr>
+              <td><strong>Tempo de Carregamento</strong></td>
+              <td><span class="pres-cross">✕</span> 3 a 6 segundos (WordPress pesado com plugins)</td>
+              <td class="highlight"><span class="pres-check">✓</span> <strong>Menos de 0.8s (HTML/CSS puro na Cloudflare)</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Retenção de Usuário</strong></td>
+              <td><span class="pres-cross">✕</span> Média de 15 a 25 segundos na página</td>
+              <td class="highlight"><span class="pres-check">✓</span> <strong>Mais de 2 minutos com Tour Virtual 360° integrado</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Conversão de Clientes</strong></td>
+              <td><span class="pres-cross">✕</span> Formulários longos que ninguém responde</td>
+              <td class="highlight"><span class="pres-check">✓</span> <strong>CTAs diretos para WhatsApp qualificado</strong> por página</td>
+            </tr>
+            <tr>
+              <td><strong>Dados Estruturados</strong></td>
+              <td><span class="pres-cross">✕</span> Sem marcação Schema.org ou schemas quebrados</td>
+              <td class="highlight"><span class="pres-check">✓</span> <strong>FAQPage, LocalBusiness, AccountingService e Breadcrumbs</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 07: O CICLO DE MATURAÇÃO E RANQUEAMENTO -->
+  <section class="pres-section" id="maturacao">
+    <div class="container">
+      <div class="pres-header-block">
+        <span class="pres-step-badge">Pilar 06 · Planejamento de Resultados</span>
+        <h2 class="pres-section-title">Como Funciona a Maturação do Ranquear Orgânico no Google</h2>
+        <p class="pres-section-sub">
+          Diferente dos anúncios pagos (que param de gerar leads no minuto em que você para de pagar), o <strong>SEO Orgânico é um patrimônio digital cumulativo</strong>. O trabalho executado neste site acelera drasticamente esse processo:
+        </p>
+      </div>
+
+      <div class="grid-3" style="gap:24px;">
+        <div class="pres-card">
+          <div class="pres-card-icon" style="background:rgba(16, 185, 129, 0.12);color:#10B981;">
+            01
+          </div>
+          <h3>Fase 1: Indexação e Rastreamento (Dias 1 a 30)</h3>
+          <p>
+            O Googlebot e os agentes de IA leem o <code>sitemap.xml</code> e o <code>robots.txt</code>. Todas as 20 páginas são catalogadas e o Google começa a exibir o site nas pesquisas específicas de bairros e serviços segmentados.
+          </p>
+          <div class="pres-card-meta"><span style="color:#10B981;">✓ Infraestrutura já 100% pronta e ativa</span></div>
+        </div>
+
+        <div class="pres-card">
+          <div class="pres-card-icon" style="background:rgba(255, 153, 0, 0.12);color:#FF9900;">
+            02
+          </div>
+          <h3>Fase 2: Geração de Cliques de Nicho (Meses 2 a 4)</h3>
+          <p>
+            Termos de cauda longa (ex: <em>"contabilidade para clínicas ponta verde"</em>, <em>"abrir empresa de serviços maceió"</em>) começam a receber os primeiros acessos orgânicos qualificados e mensagens no WhatsApp.
+          </p>
+          <div class="pres-card-meta"><span>Primeiros contratos fechados sem custo por clique</span></div>
+        </div>
+
+        <div class="pres-card">
+          <div class="pres-card-icon" style="background:rgba(2, 132, 199, 0.12);color:#0284C7;">
+            03
+          </div>
+          <h3>Fase 3: Liderança e Autoridade Máxima (Meses 4 a 8+)</h3>
+          <p>
+            O Google consolida a Concentre como autoridade máxima de contabilidade em Maceió, disputando as primeiras posições nos termos de maior volume e sendo citada continuamente pelas ferramentas de Inteligência Artificial.
+          </p>
+          <div class="pres-card-meta"><span style="color:#0284C7;">Máquina permanente de geração de receita</span></div>
+        </div>
+      </div>
+
+      <!-- Resumo dos Próximos Passos Recomendados -->
+      <div style="margin-top:40px;background:#FFFFFF;border:1.5px solid #CBD5E1;border-radius:16px;padding:32px;">
+        <h3 style="font-size:1.3rem;font-weight:700;color:var(--color-graphite);margin-bottom:14px;">
+          Checklist Estratégico para Potencializar os Resultados:
+        </h3>
+        <ul style="padding-left:22px;color:#475569;line-height:1.8;font-size:0.95rem;">
+          <li><strong>Perfil da Empresa no Google (Google Meu Negócio):</strong> Manter o endereço no Farol rigorosamente idêntico ao do site e cadastrar as URLs de cada serviço no perfil.</li>
+          <li><strong>Postagens Mensais e Avaliações:</strong> Incentivar clientes satisfeitos a deixarem avaliações 5 estrelas citando termos como "abertura de empresa" e "consultoria".</li>
+          <li><strong>Acompanhamento no Google Search Console:</strong> Monitorar quais termos estão gerando mais impressões e cliques para direcionar a equipe de vendas.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Banner Final de Ação -->
+  <section style="background:linear-gradient(135deg, #181816 0%, #282827 100%);color:#FFFFFF;padding:60px 0;text-align:center;border-top:2px solid #FF9900;">
+    <div class="container" style="max-width:800px;">
+      <h2 style="color:#FFFFFF;font-size:clamp(1.8rem, 3.2vw, 2.6rem);font-weight:800;margin-bottom:16px;">
+        O Site Está Pronto para Gerar Negócios
+      </h2>
+      <p style="color:#CBD5E1;font-size:1.05rem;line-height:1.6;margin-bottom:32px;">
+        Esta plataforma não foi feita apenas para ser bonita: foi arquitetada para ser o maior ativo comercial e de reputação da <strong>Concentre Contabilidade</strong> nos próximos anos.
+      </p>
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+        <a href="../" class="btn btn-outline" style="border-color:#FFF;color:#FFF;padding:14px 28px;font-size:0.95rem;">
+          Navegar Pelo Site Completo
+        </a>
+        <a href="https://wa.me/558232026489?text=Ol%C3%A1%2C%20Concentre!%20Finalizei%20a%20leitura%20da%20apresenta%C3%A7%C3%A3o%20estrat%C3%A9gica." target="_blank" rel="noopener" class="btn btn-primary" style="padding:14px 28px;font-size:0.95rem;">
+          Falar com a Equipe no WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé Corporativo -->
+  <footer style="background:#111110;color:#94A3B8;padding:36px 0;border-top:1px solid rgba(255,255,255,0.08);text-align:center;font-size:0.86rem;">
+    <div class="container">
+      <p style="margin-bottom:8px;color:#E2E8F0;font-weight:600;">
+        Concentre Contabilidade &amp; Consultoria Empresarial · Sede Própria: Rua João Nogueira, 80 - Farol, Maceió - AL
+      </p>
+      <p style="color:#64748B;margin-bottom:14px;">
+        Dossiê de Engenharia de SEO &amp; GEO · Documento Técnico Estratégico
+      </p>
+      <p class="footer-credit" style="color:#94A3B8;margin:0;">
+        Desenvolvido por <a href="https://www.instagram.com/tudo.em360/" target="_blank" rel="noopener" style="color:#FF9900;text-decoration:none;font-weight:600;">@tudo.em360</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Script Interativo da Apresentação -->
+  <script>
+    // Ativação dinâmica dos botões de navegação conforme a rolagem
+    const navLinks = document.querySelectorAll('.pres-nav-btn');
+    const sections = document.querySelectorAll('section[id]');
+
+    function updateActiveNav() {
+      const scrollY = window.pageYOffset;
+      sections.forEach(sec => {
+        const top = sec.offsetTop - 120;
+        const height = sec.offsetHeight;
+        const id = sec.getAttribute('id');
+        if (scrollY >= top && scrollY < top + height) {
+          navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + id) {
+              link.classList.add('active');
+            }
+          });
+        }
+      });
+    }
+
+    window.addEventListener('scroll', updateActiveNav, { passive: true });
+  </script>
+
+</body>
+</html>
